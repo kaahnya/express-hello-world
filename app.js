@@ -9,8 +9,11 @@ app.get("/", (req, res) => res.type('html').send(html));
 
 app.get('/req', (req, res) => {
     console.log("Just got a request!")
-    res.send('Yo!')
-})
+    res.send('Yo!')});
+
+app.get('/req', (req, res) => {
+    console.log("Just got a request!")
+    res.send('Meu nome é Karina Pratis Freire Decleva!')});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
