@@ -19,6 +19,51 @@ app.get('/tico', (req, res) => {
     console.log("Just got a request!")
     res.send('teco')});
 
+app.get("/pokemons", (req, res) => {
+  res.json([
+    {
+      id: 1,
+      name: "Besta",
+    },
+        {
+      id: 2,
+      name: "Quatro Braços",
+    },
+    {
+      id: 3,
+      name: "Massa cinzenta",
+    },
+    {
+      id: 4,
+      name: "XLR8",
+    },
+    {
+      id: 5,
+      name: "Ultra T",
+    },
+    {
+      id: 6,
+      name: "Diamante",
+    },
+    {
+      id: 7,
+      name: "Aquático",
+    },
+    {
+      id: 8,
+      name: "Insectóide",
+    },
+    {
+      id: 9,
+      name: "Fantasmatico",
+    },
+    {
+      id: 10,
+      name: "Chamas",
+    },
+  ]);
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
